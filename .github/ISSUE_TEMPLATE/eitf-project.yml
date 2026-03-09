@@ -8,8 +8,9 @@ assignees:
 type: content
 body:
   - type: markdown
-    value: |
-      Thanks for taking the time to fill out this project template!
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this project template!
   - type: input
     attributes:
       label: Full name
