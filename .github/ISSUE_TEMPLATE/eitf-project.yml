@@ -1,0 +1,51 @@
+name: EITF project
+description: Create a parent issue for a new project to integrate with ECHOES
+title: "[PROJECT]:"
+labels: "EITF project"
+projects: "EITF"
+assignees: 
+  - laureD19
+type: content
+body:
+  - type: markdown
+    value: |
+      Thanks for taking the time to fill out this project template!
+  - type: input
+    attributes:
+      label: Full name
+      description: Please provide the full name of your project
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Project website URL
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info? 
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: description 
+    attributes:
+      label: Short description of your project
+      description: It can be a copy-pasting of the objective as presented on CORDIS or on your project website
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: Keywords 
+      description: Please provide 5 keywords describing your project (comma-separated values)
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Link to the ECHOES Integration Questionnaire 
+      description: Coordinator of the project and EITF representatives have received a link to an Integration Questionnaire to fill out.
+    validations:
+      required: true
+
