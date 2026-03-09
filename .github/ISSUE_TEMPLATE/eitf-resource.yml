@@ -1,0 +1,38 @@
+name: EITF Resource
+description: Create an issue for a resource to be integrated with ECHOES.
+title: "[Resource]: replace by resource name"
+labels: ["EITF resource"]
+projects: ["eitf"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this resource template!
+  - type: input
+    id: project
+    attributes:
+      label: Project in which the resource is developed 
+      description: Indicate the acronym of the project or the GitHub issue number if you know it 
+      placeholder: ex. EXCALIBUR or #12
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info? 
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: description 
+    attributes:
+      label: Short description of your resource
+      description: It can be just 2-3 sentences describing what the resource is suppose to provide to the (future) users
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Any external link to the resource or its documentation 
+    validations:
+      required: false
