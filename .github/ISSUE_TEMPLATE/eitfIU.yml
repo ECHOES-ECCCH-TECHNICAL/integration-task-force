@@ -1,0 +1,13 @@
+name: EITF Integration Unit
+description: Create an issue for an ECHOES Integration Unit.
+title: "[IU]: replace by resource name and Cloud component name"
+labels: [""EITF Integration Unit""]
+projects: ["EITF"]
+body:
+  - type: textarea
+    id: description 
+    attributes:
+      label: Short description of your expectations for this specific integration unit
+      description: It can be just 2-3 sentences describing what you expect from this integration unit or highlighting the 
+    validations:
+      required: true
