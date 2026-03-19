@@ -1,7 +1,7 @@
 name: EITF Integration Unit
 description: Create an issue for an ECHOES Integration Unit.
 title: "[IU]: replace by resource name and Cloud component name"
-labels: [""EITF Integration Unit""]
+labels: ["EITF Integration Unit"]
 projects: ["EITF"]
 body:
   - type: textarea
