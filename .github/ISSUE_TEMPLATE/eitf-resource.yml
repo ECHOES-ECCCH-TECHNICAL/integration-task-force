@@ -2,7 +2,7 @@ name: EITF Resource
 description: Create an issue for a resource to be integrated with ECHOES.
 title: "[Resource]: replace by resource name"
 labels: ["EITF resource"]
-projects: ["eitf"]
+projects: ["EITF"]
 body:
   - type: markdown
     attributes:
