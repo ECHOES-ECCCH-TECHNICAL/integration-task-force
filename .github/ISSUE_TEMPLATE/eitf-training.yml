@@ -1,0 +1,282 @@
+name: Training resource - Candidate Card
+description: Register existing or planned training for the ECHOES learning ecosystem.
+title: "[Resource]: replace with training resource title"
+labels: ["EITF resource", "training"]
+projects: ["ECHOES-ECCCH-TECHNICAL/2"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Training Candidate Card
+
+        Register one course, module, toolkit, or reusable workshop format that can be reviewed and maintained independently. This issue will be its **Training Integration Unit (TIU)** throughout its lifecycle. A training platform itself belongs in the general Resource form.
+
+        Before starting, read the [preparation checklist and examples](https://github.com/ECHOES-ECCCH-TECHNICAL/integration-task-force/blob/main/docs/training/README.md) and [check existing training records](https://github.com/ECHOES-ECCCH-TECHNICAL/integration-task-force/issues?q=is%3Aissue%20label%3Atraining).
+
+        Replace the issue title above with the training title, keeping `[Resource]:`. Answer each required question; concise answers are welcome. Describe planned arrangements for new resources. Use “None” or “Not applicable” only where appropriate, with a reason if needed. WP5 reviewers will assess the proposal separately.
+
+        ## 1. Identity and responsibility
+  - type: input
+    id: project
+    attributes:
+      label: Contributing project
+      description: Give the project acronym and its EITF project issue number or link. Independent external contributions without a project record are sponsored under ECHOES (#85); identify the actual provider below. A typed reference does not automatically set the parent issue.
+      placeholder: "ECHOES #85, or your sister project / grant project and issue number"
+    validations:
+      required: true
+  - type: input
+    id: proposer
+    attributes:
+      label: Proposed by
+      description: Name the person or team and organisation, and indicate WP/partner, sister project, cascading grant beneficiary, or external contributor.
+      placeholder: "Name / team, organisation, contributor category"
+    validations:
+      required: true
+  - type: input
+    id: owner
+    attributes:
+      label: Contact and provisional TIU owner
+      description: Who will answer questions and coordinate this resource? Give a name/team and GitHub username or contact address. A liaison may register the resource for an external owner.
+      placeholder: "Owner name/team; @username or contact address; liaison if applicable"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## 2. Resource and delivery
+  - type: dropdown
+    id: resource_type
+    attributes:
+      label: Type of resource
+      description: Choose the best fit. If you choose Other, describe it in Notes.
+      options:
+        - Course
+        - Module
+        - Workshop format
+        - Toolkit
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: delivery_formats
+    attributes:
+      label: Delivery formats
+      description: Select all that apply. If you choose Other, describe it in Notes.
+      multiple: true
+      options:
+        - Self-paced online course
+        - Instructor-led workshop
+        - Video tutorial
+        - Blended learning
+        - Webinar
+        - Textual guide
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: languages
+    attributes:
+      label: Languages
+      description: List the languages available or planned, distinguishing planned translations from existing ones.
+      placeholder: "English (available); French (planned)"
+    validations:
+      required: true
+  - type: dropdown
+    id: existing_resource
+    attributes:
+      label: Does the resource already exist?
+      description: Select Yes for an existing draft or published resource. Select No for a proposal without material yet.
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: input
+    id: resource_url
+    attributes:
+      label: Existing resource URL
+      description: Required when you selected Yes above; link to the draft or published material. Leave empty for a new proposal. Reviewers check this condition because the form cannot enforce it conditionally.
+      placeholder: "https://..."
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ## 3. Learners
+  - type: textarea
+    id: audience
+    attributes:
+      label: Target audiences
+      description: Describe the intended learners by role where possible, including relevant experience or working context.
+      placeholder: "Museum collection managers who need to..."
+    validations:
+      required: true
+  - type: dropdown
+    id: proficiency
+    attributes:
+      label: Intended learner proficiency
+      description: This describes the learners, not the curricular integration level. Explain mixed audiences or Other in Notes.
+      options:
+        - Introductory
+        - Intermediate
+        - Advanced
+        - Mixed
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites and assumed knowledge
+      description: State what learners should already know or have completed. Write None if there are no prerequisites. List technical requirements under Dependencies below.
+    validations:
+      required: true
+  - type: input
+    id: learner_effort
+    attributes:
+      label: Estimated learner effort
+      description: Estimate the total learner workload, including exercises. Use hours, sessions, or another explained unit.
+      placeholder: "About 2 hours, including a 30-minute exercise"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## 4. Learning purpose
+  - type: textarea
+    id: need
+    attributes:
+      label: Concrete use case or identified need
+      description: What problem will this training help learners solve? Mention consultation, feedback, or an identified gap when available.
+    validations:
+      required: true
+  - type: textarea
+    id: goals
+    attributes:
+      label: Learning goals
+      description: Describe the broad educational purpose in about 150 words or fewer. Goals explain why the training matters; outcomes below describe what learners will be able to do.
+    validations:
+      required: true
+  - type: textarea
+    id: outcomes
+    attributes:
+      label: Learning outcomes
+      description: List concrete actions learners should be able to perform after completing the resource. Use verbs such as identify, explain, compare, create, or evaluate.
+      placeholder: |
+        After completing this resource, learners will be able to:
+        - Identify...
+        - Create...
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## 5. ECHOES relationships
+
+        A resource may teach a tool, use a service operationally, and belong to a learning pathway. These are different relationships. General training without a direct component link is also welcome.
+  - type: dropdown
+    id: relationship_types
+    attributes:
+      label: Relationship types
+      description: Select all relevant relationships. Choose General training only if there is no specific component or pathway relationship yet; explain the community need below.
+      multiple: true
+      options:
+        - Teaches or is about an ECCCH resource
+        - Operationally uses an ECCCH service
+        - Belongs to an ECHOES curriculum or learning pathway
+        - General training without a specific relationship yet
+    validations:
+      required: true
+  - type: textarea
+    id: related_resources
+    attributes:
+      label: Related resources, components and pathways
+      description: For each relationship, name the resource, Vertical Application, dataset, workflow, service, or pathway and give its issue number or URL where available. Mark planned relationships as planned. For general training, explain its relevance to ECCCH communities. A link here does not create a technical IU.
+      placeholder: |
+        Teaches: OCRA, #81 (illustrative example).
+        Pathway: planned introductory collection-care pathway.
+        Operational service use: None.
+    validations:
+      required: true
+  - type: dropdown
+    id: proposed_level
+    attributes:
+      label: Proposed curricular integration level
+      description: This is your initial hypothesis. WP5 assigns a provisional level at intake and confirms the applicable level later. Levels are participation choices, not compulsory steps or learner difficulty.
+      options:
+        - Level 1 - External reference (discovery and basic listing; provider maintains it)
+        - Level 2 - Curricular alignment (included in pathways; shared maintenance and periodic review)
+        - Level 3 - Full integration (embedded curriculum; coordinated maintenance with ECCCH evolution)
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## 6. Hosting and reuse
+
+        Existing resources may stay on their current platforms. For new resources, describe the proposed arrangements. DARIAH-Campus is an available route, not a requirement. A persistent identifier (PID), such as a DOI, identifies a published resource; this issue number identifies its tracking record.
+  - type: textarea
+    id: hosting
+    attributes:
+      label: Existing or planned hosting
+      description: Where will learners find the material? Name the platform/provider and explain stable access, how descriptive metadata will be exposed, and support for persistent identifiers. For planned hosting, describe the proposed route and any points still to confirm.
+      placeholder: |
+        Platform/provider and access:
+        Metadata exposure (for example, public catalogue record or metadata export):
+        PID support (existing identifier or planned assignment route):
+        Points to confirm, if any:
+    validations:
+      required: true
+  - type: textarea
+    id: provider_policies
+    attributes:
+      label: Hosting provider policies
+      description: Summarise or link the provider's metadata, licensing and persistent-identifier policies. These are the platform's policies; the licence for your material is the next question. State what remains to be checked, by whom, for planned arrangements.
+      placeholder: |
+        Metadata policy:
+        Licensing policy:
+        PID policy:
+        Outstanding checks and responsible person, if any:
+    validations:
+      required: true
+  - type: input
+    id: licence
+    attributes:
+      label: Resource licence
+      description: Give the current licence, or describe a proposed licence and any permission still needed for new material. Open Educational Resources are the default in D5.2. A proposal is not a licence grant; reviewers confirm suitability before publication.
+      placeholder: "Licence name/link; current or proposed; any permissions to resolve"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## 7. Sustainability
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List required tools, services, accounts, software versions, data and access conditions. Explain which are essential to learning activities. Write None if there are no dependencies.
+    validations:
+      required: true
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance responsibility and provisional arrangements
+      description: Who will keep the resource current and accessible, and how? For Level 1 this can be the external provider. For Level 2 describe proposed shared responsibilities; for Level 3 describe coordination with relevant ECCCH changes. Identify arrangements still to agree.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Add explanations for Other or Mixed choices and any other useful context. Write None if there is nothing to add.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## After submitting
+
+        Keep this issue for future edits and reviews; do not create a second TIU record. A curator will check the parent project, owner and Project membership, then record the assessment. Completing this form does not automatically assign a parent, a reviewer, or custom Project fields.
+
+        To update your answers, use **Edit** on the issue description. Once training is published, keep its issue open for maintenance. See the [training guide](https://github.com/ECHOES-ECCCH-TECHNICAL/integration-task-force/blob/main/docs/training/README.md) for the next steps, or contact integration@echoes-eccch.eu for help.

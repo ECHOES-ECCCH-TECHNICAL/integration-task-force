@@ -6,6 +6,7 @@ See also:
 
 - ECHOES D3.1 Integration Strategy [https://doi.org/10.5281/zenodo.17751334](https://doi.org/10.5281/zenodo.17751334)   
 - ECHOES D3.2 Integration Roadmap [https://doi.org/10.5281/zenodo.17751669](https://doi.org/10.5281/zenodo.17751669)   
+- ECHOES D5.2 Model Workflow for Developing Resources and Training [https://doi.org/10.5281/zenodo.20442259](https://doi.org/10.5281/zenodo.20442259), with a [training contribution guide](docs/training/README.md)
 - ECHOES D6.2 Interoperability Requirements and Guidelines [https://doi.org/10.5281/zenodo.18656367](https://doi.org/10.5281/zenodo.18656367) and companion wiki [https://echoes-eccch-technical.github.io/internal-documentation/](https://echoes-eccch-technical.github.io/internal-documentation/)   
 - ECHOES D6.3 Architecture for Data and Cloud Components [https://doi.org/10.5281/zenodo.20444205](https://doi.org/10.5281/zenodo.20444205)   
 - ECHOES D9.1 Assessment Framework [https://doi.org/10.5281/zenodo.20448152](https://doi.org/10.5281/zenodo.20448152) and companion wiki [https://echoes-eccch-technical.github.io/cloud-assessment-framework/](https://echoes-eccch-technical.github.io/cloud-assessment-framework/)   
@@ -15,6 +16,24 @@ See also:
 # **Goal**
 
 The ECHOES Integration Task Force (EITF) is responsible for coordinating the integration of outputs from sister projects into/with ECCCH infrastructure. Detailed procedure is laid out in D3.2 Integration Roadmap. This documentation provides the practical details for managing the integration process, focused on GitHub as the tool for tracking the integrations.
+
+## Training resources
+
+Training is added through a dedicated **Training resource - Candidate Card** form and [training guide](docs/training/README.md). This extends the existing EITF repository and Project without changing the technical issue forms, integration fields, existing views or workflows. ECHOES partners, sister projects, cascading grants and external contributors can register existing or planned courses, modules, toolkits and reusable workshop formats.
+
+Each Training Integration Unit (TIU) is one `[Resource]:` issue, labelled `EITF resource` and `training`, beneath its contributing project. Its Candidate Card, assessments, publication details and maintenance history stay on that issue. A training platform retains its existing Resource record; independently maintained learning materials can have their own records linked to it.
+
+Training **about** a tool, operational **use of** a service and membership of a **learning pathway** are separate relationships. Create a technical Integration Unit only for concrete integration work with a Cloud component, using the existing technical process. A course about OCRA can link to OCRA without creating a technical IU.
+
+Training has separate curricular levels and lifecycle states defined in D5.2. The technical levels and six-step process below continue to apply to technical integrations. Levels 2–3 training become Active after approval, publication and evidenced curricular placement and discovery; Level 1 references become Active after screening and listing. Keep Active training issues open for maintenance, including when related technical IUs are completed.
+
+- [Contributor guide, preparation checklist and worked examples](docs/training/README.md)
+- [Training Candidate Card form](.github/ISSUE_TEMPLATE/eitf-training.yml)
+- [Curator guide and review templates](docs/training/maintainers.md)
+- [Training-only Project setup and pilot checklist](docs/training/setup.md)
+- [Mapping to D5.2's annexes](docs/training/annex-mapping.md)
+
+Repository access and GitHub Project access are separate. Contributors can use [direct training issue search](https://github.com/ECHOES-ECCCH-TECHNICAL/integration-task-force/issues?q=is%3Aissue%20label%3Atraining) when a Project view is unavailable. An EITF liaison can register a card for someone without repository access through the existing [integration@echoes-eccch.eu](mailto:integration@echoes-eccch.eu) contact route.
 
 # **Context**
 
@@ -92,6 +111,8 @@ Check if your project and resources are already described in the tracking tool, 
 ## Issues templates 
 
 Three different issue templates have been created to support the representation of: 1/ projects; 2/ ressources and 3/ integration units.
+
+Training adds a fourth choice, **Training resource - Candidate Card**, while preserving the three existing forms. See the [training guide](docs/training/README.md); the screenshot below shows the original choices.
 
 <img width="794" height="236" alt="grafik" src="https://github.com/user-attachments/assets/4273c072-4635-4f5e-ac2a-7bf7a44ff12a" />
 

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Try the EITF training Candidate Card, preview an issue and explore the review templates in a self-contained local demonstration.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'none'; connect-src 'none'; form-action 'none'; base-uri 'none'">
+  <title>EITF · Training demonstration</title>
+  <style>/* DEMO_STYLE */</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">E</span><span><strong>EITF</strong><span class="brand-divider"> / </span>Training resources</span></div>
+    <span class="local-badge">Local demonstration</span>
+  </header>
+  <div class="intro-bar"><p>Try the Candidate Card, inspect the issue, then walk through the review.</p><span>Nothing is submitted to GitHub.</span></div>
+  <nav class="tabs" aria-label="Demonstration views">
+    <button type="button" data-view="card" aria-current="page">1. Candidate Card</button>
+    <button type="button" data-view="preview">2. Issue preview</button>
+    <button type="button" data-view="references">3. Review & guidance</button>
+  </nav>
+  <main id="main" tabindex="-1">
+    <section id="card-view" class="view" aria-labelledby="card-title">
+      <div class="page-heading"><div><p class="eyebrow">Contributor experience</p><h1 id="card-title">Propose a training resource</h1></div><button type="button" class="primary" data-open-preview>Preview issue</button></div>
+      <div class="example-bar"><label for="example-picker">Try an example</label><select id="example-picker"><option value="">Choose an example…</option><option value="level-1">Level 1 · External reference</option><option value="level-2">Level 2 · Curricular alignment</option><option value="level-3">Level 3 · Full integration</option></select><button type="button" id="load-example">Load example</button><button type="button" id="clear-card" class="text-button">Start blank</button><span class="muted">Loading or clearing replaces this draft.</span></div>
+      <div id="example-notice" class="notice" hidden></div>
+      <div class="workspace"><aside class="section-nav" aria-label="Card sections"><div class="progress-label"><strong id="completion">0 of 24 answered</strong><span id="remaining">Required fields remain</span></div><div class="progress-track"><div id="progress-fill"></div></div><nav id="section-links"></nav><p class="aside-note">One resource, one issue.<br>Review decisions are added later.</p><button type="button" class="text-button" data-document="guide">Open contributor guide</button></aside><div class="form-column"><div class="title-field"><label for="issue-title">Issue title <span class="required">*</span></label><input id="issue-title" type="text" placeholder="[Resource]: Your training resource title" required><p class="field-help">Keep the [Resource]: prefix. A proposed curricular level is separate from learner proficiency and later assessment.</p></div><form id="candidate-form" novalidate></form><div class="card-footer"><span class="muted">Edits stay in this tab. Refreshing starts over.</span><button type="button" class="primary" data-open-preview>Preview issue</button></div></div></div>
+    </section>
+    <section id="preview-view" class="view" aria-labelledby="preview-title" hidden>
+      <div class="page-heading"><div><p class="eyebrow">Draft output</p><h1 id="preview-title">What the issue would contain</h1></div><button type="button" data-view="card">Back to the card</button></div>
+      <div class="notice">This is a local approximation of GitHub’s rendering. It does not create an issue, assign a parent, set Project fields or record an assessment.</div>
+      <div id="completeness-panel" class="completeness-panel"></div>
+      <div class="preview-grid"><article class="issue-card"><header class="issue-heading"><span class="draft-badge">Draft preview</span><h2 id="rendered-title"></h2><div class="label-row"><span class="issue-label">EITF resource</span><span class="issue-label training-label">training</span></div></header><div id="rendered-issue" class="markdown"></div></article><aside class="source-panel"><div class="source-heading"><h2>Issue body · Markdown</h2><button type="button" id="copy-issue">Copy body</button></div><textarea id="issue-markdown" readonly aria-label="Generated issue body Markdown" spellcheck="false"></textarea><p class="field-help">The title is separate. Introductory form instructions and reviewer decisions are not part of the submitted answers.</p></aside></div>
+    </section>
+    <section id="references-view" class="view" aria-labelledby="references-title" hidden>
+      <div class="page-heading"><div><p class="eyebrow">The same issue, through its lifecycle</p><h1 id="references-title">Review & guidance</h1></div></div>
+      <div class="notice">These are the repository’s actual documents. Reviewers copy the applicable template into the existing issue; filling the card does not approve the resource.</div>
+      <div class="workspace"><aside class="section-nav"><nav id="document-links" aria-label="Reference documents"></nav></aside><div class="document-column"><div class="document-toolbar"><span id="document-name"></span><button type="button" id="copy-document">Copy Markdown</button></div><article id="document-body" class="markdown document-body"></article></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>ECHOES Integration Task Force · Training proposal</span><span>Local only · Fictional examples · No account needed</span></footer>
+  <div id="live-message" role="status" aria-live="polite" class="toast" hidden></div>
+  <noscript><p>This local demonstration needs JavaScript to show the form. The source documents are available in the training folder.</p></noscript>
+  <script>/* DEMO_DATA */</script>
+  <script>/* DEMO_SCRIPT */</script>
+</body>
+</html>
