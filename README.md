@@ -10,7 +10,7 @@ See also:
 - ECHOES D6.3 Architecture for Data and Cloud Components [https://doi.org/10.5281/zenodo.20444205](https://doi.org/10.5281/zenodo.20444205)   
 - ECHOES D9.1 Assessment Framework [https://doi.org/10.5281/zenodo.20448152](https://doi.org/10.5281/zenodo.20448152) and companion wiki [https://echoes-eccch-technical.github.io/cloud-assessment-framework/](https://echoes-eccch-technical.github.io/cloud-assessment-framework/)   
 - Official ECHOES-ECCCH GitHub organisation: [https://github.com/ECHOES-ECCCH](https://github.com/ECHOES-ECCCH)
-- [EITF Terms of Reference and Rules of Procedure] (https://docs.google.com/document/d/1NDij3fvZNiGs9wYEfrYBW3l3pwNh2bhU3RT9ITtU0bk/edit?usp=sharing)
+- [EITF Terms of Reference and Rules of Procedure](https://docs.google.com/document/d/1NDij3fvZNiGs9wYEfrYBW3l3pwNh2bhU3RT9ITtU0bk/edit?usp=sharing)
 
 # **Goal**
 
@@ -44,7 +44,7 @@ Components - still under development - are made available in the official and fu
 
 HDTO is not a component per se, but a pre-requisite to "speak" to the Knowledge Base and as such is included in the list of "components" available for integration.
 
-- HDTO repo in the ECHOES GitHub org.: [https://github.com/ECHOES-ECCCH/HDTO-Heritage-Digital-Twin-Ontology] (https://github.com/ECHOES-ECCCH/HDTO-Heritage-Digital-Twin-Ontology), check also the dev branch
+- HDTO repo in the ECHOES GitHub org.: [https://github.com/ECHOES-ECCCH/HDTO-Heritage-Digital-Twin-Ontology](https://github.com/ECHOES-ECCCH/HDTO-Heritage-Digital-Twin-Ontology), check also the dev branch
 - ECHOES The Digital Commons (D7.1) [https://doi.org/10.5281/zenodo.20445937](https://doi.org/10.5281/zenodo.20445937)   
 - HDTO webinar materials: [https://github.com/ECHOES-ECCCH/HDTO-Heritage-Digital-Twin-Ontology/tree/main](https://github.com/ECHOES-ECCCH/HDTO-Heritage-Digital-Twin-Ontology/tree/main)
 - HTML documentation of the latest HDTO ontology specification, including all class and property declarations: [https://echoes-eccch.github.io/HDTO-Heritage-Digital-Twin-Ontology/](https://echoes-eccch.github.io/HDTO-Heritage-Digital-Twin-Ontology/)
@@ -58,14 +58,14 @@ HDTO is not a component per se, but a pre-requisite to "speak" to the Knowledge 
 
 ### Authorisation and Authentication Infrastructure
 
-- [ECHOES AAI Integration](https://docs.google.com/document/d/15_4Z0DgcoVNKL4sZGMhkgnVHoH-SQOUAPq-mUfghk_4/edit?usp=sharing) - soon available as public documentation 
+- [ECHOES AAI Integration](https://docs.google.com/document/d/15_4Z0DgcoVNKL4sZGMhkgnVHoH-SQOUAPq-mUfghk_4/edit?usp=sharing) - soon available as public documentation in [https://github.com/ECHOES-ECCCH/Authentication-Authorization](https://github.com/ECHOES-ECCCH/Authentication-Authorization)
 
-### (to be added) Storage and Deployment
+### (to be added) Storage, Deployment, Processing, Monitoring, Service Desk and the Cloud Platform API
 
 
 # **EITF GitHub use and conventions**
 
-This dedicated EITF GitHub repo \- [https://github.com/ECHOES-ECCCH-TECHNICAL/integration-task-force](https://github.com/ECHOES-ECCCH-TECHNICAL/integration-task-force) \- is meant as an administrative tracking tool to manage individual integrations. It will be used for management only. No commits are foreseen here, atm.
+This dedicated EITF GitHub repo \- [https://github.com/ECHOES-ECCCH-TECHNICAL/integration-task-force](https://github.com/ECHOES-ECCCH-TECHNICAL/integration-task-force) \- is meant as an administrative tracking tool to manage individual integrations. It will be used for management only. No commits are foreseen here, atm. This repository and related project are set to public. 
 
 Conventions used to populate this tracking tool tracking are the following:
 
@@ -73,13 +73,7 @@ Conventions used to populate this tracking tool tracking are the following:
   - Parent issue describes a project  
   - Sub-issues describe resources from a given project  
   - Sub-sub-issues describe integration units for a given resource
-
-## Access/Log in 
-
-- The repository is currently set to private, as it contains contact details, and is used as an internal administrative tracking tool.   
-- Issues in this repositories are organised in a dedicated GitHub project, using several views: [https://github.com/orgs/ECHOES-ECCCH-TECHNICAL/projects/2](https://github.com/orgs/ECHOES-ECCCH-TECHNICAL/projects/2)    
-- (Sister) projects adopters are added as members of the repository, with write access. While EITF membership is limited to two persons per project, membership to the EITF GitHub repo is not. As many project members as needed can get access to this repo, to ensure smooth communication.
-- To get access, share your GitHub user name vai [integration@echoes-eccch.eu](mailto:integration@echoes-eccch.eu) or add it in [this spreadsheet project list](https://docs.google.com/spreadsheets/d/1ldmj3Q6CPmFZUTAOO2VTf_a57S9LH_fa4r2Rp-nGBZs/edit?usp=sharing)  
+ 
 
 ## Project views
 
@@ -91,19 +85,19 @@ Check if your project and resources are already described in the tracking tool, 
 
 ## Issues templates 
 
-Three different issue templates have been created to support the representation of: 1/ projects; 2/ ressources and 3/ integration units.
+Three different issue templates have been created to support the representation of: 1/ projects; 2/ resources and 3/ integration units.
 
 <img width="794" height="236" alt="grafik" src="https://github.com/user-attachments/assets/4273c072-4635-4f5e-ac2a-7bf7a44ff12a" />
 
 
 ### 1/ Project
 
-Basic information about a project should be filled in, there. Most of the projects have been created by the EITF coordination team. We might have missed something, so feel free to edit, or comment on the \[PROJECT\] issues that are already existing.
+Basic information about a project should be filled in, there. Most of the projects have been created by the EITF coordination team. We might have missed something, so feel free to edit, or comment on the \[PROJECT\] issues that already exist.
 
 ### 2/ Resource
 
 Resources should be created as sub-issues of projects.
-See above for more info on what a resource is. Basic information is collected in the \[Resource\] issues, such as name, acronym, short description, any external links to the resource or some documentation when it exists already. Contact details, ideally someone responsible for the resource (developing, providing or maintaining it), is also requested to facilitate future communications. 
+See above for more info on what a resource is. Basic information is collected in the \[Resource\] issues, such as name, acronym, short description, any external links to the resource or some documentation when it exists already. Contact details, ideally someone responsible for the resource (developing, providing or maintaining it), is also requested to facilitate future communications and assignment.  
 
 ### 3/ Integration Unit
 
@@ -122,7 +116,7 @@ Creating an Integration Unit issue means declaring an interest for an integratio
    Easy access to your resources via the GitHub EITF [resource view](https://github.com/orgs/ECHOES-ECCCH-TECHNICAL/projects/2/views/1) or via the sub-issues already assigned to your project​.
 
 3. Create integration units as sub-issues of your resources.​
-- Atm, focus on interactions with HDTO, KB and AAI. More info on deployment and storage to come.​
+- Atm, focus on interactions with HDTO, KB and AAI. More info on deployment, storage and other components to come in 2027.​
 - Please provide a minimal description of the expected system interactions/integration. ​
 - If you already know who will be working on a given unit in your project. Assign the issue accordingly. ​
 
@@ -138,22 +132,21 @@ These are the levels that you can target. More details are provided in D3.1 Inte
 
 # **Integration steps \- Quick reference** 
 
-Six integration steps are envisioned at the moment, as described in D3.2 Integration Roadmap. The table below provides a summary view of these steps also highlighting how the steps translate in the present GitHub tracking tool
+Five integration steps are envisioned at the moment, as described in D3.2 Integration Roadmap (version 2 to be published in 2027). The table below provides a summary view of these steps also highlighting how the steps translate in the present GitHub tracking tool
 
 ### **ECHOES Integration Process Summary**
 
 | Step | Objective | Actors | Output | Tracking Tool Translation |
 | ----- | ----- | ----- | ----- | ----- |
 | **1\. Candidate Resources Identification** | Identify integration units (ECHOES adopter resource \+ ECHOES Cloud Component) | ECHOES adopter rep, EITF coordination team | List of integration units | Create **1 issue per unit** in the Tracking Tool |
-| **2\. Interoperability Self-Assessment** | Assess integration readiness using checklists, guidelines, and support sessions | ECHOES adopter technical contacts | Integration readiness & best integration level | Agree on **start/end dates** for units |
-| **3\. Technical Onboarding** | Implement cloud component integration (parallelizable) | Adopter tech contacts, Cloud component providers | Cloud components integrated | Assign **2 technical individuals** per issue (1 adopter \+ 1 provider) |
-| **4\. Integration Validation** | Approve implementation from both sides (adopter \+ provider) | Adopter tech contacts, Cloud component providers | Validated integration | Change issue status to **validated** |
-| **5\. Release & Monitoring** | Release services and monitor performance (uptime, errors, data usage) | Adopter tech contacts, Cloud component providers | Released & monitored resources; performance metrics | Close related issues as **completed** |
-| **6\. User Evaluation** | Gather user feedback on integrated components | ECHOES adopter representative | User feedback; insights; Collaborative Research Scenarios (CRS) evaluated | **N/A** |
+| **2\. Interoperability Self-Assessment** | Assess integration readiness using checklists, guidelines, and support sessions | ECHOES adopter technical contacts | Integration readiness & best integration level | Agree on **start/end dates** for units. Change issue status to **assessed** |
+| **3\. Technical Onboarding** | Implement cloud component integration (parallelizable) | Adopter tech contacts, Cloud component providers | Integration unit is implemented: resource has been integrated with respective cloud component(s) | Assign **2 technical individuals** per issue (1 adopter \+ 1 provider). Change issue status to **integrated** |
+| **4\. Integration Validation** | Approve implementation from both sides (adopter \+ provider) | Adopter tech contacts, Cloud component providers | Conformance checks for integration unit/resource passed | Change issue status to **released** |
+| **5\. User Evaluation** | Gather user feedback on integrated components | ECHOES adopter representative | User feedback; insights; Collaborative Research Scenarios (CRS) evaluated | Change issue status to **evaluated** |
 
 
 # **Contact or questions** 
-Feel free to get in touch via [integration@echoes-eccch.eu](mailto:integration@echoes-eccch.eu) (behind this email are the EITF coordination team members: Mailane (CNRS), Dimitris (CyU), Sally, Matej and Laure (DARIAH)).
+Feel free to get in touch via [integration@echoes-eccch.eu](mailto:integration@echoes-eccch.eu) (behind this email are the EITF coordination team members: Areti (CNRS), Dimitris (CyU), Sally, Matej and Laure (DARIAH)).
 
 
 
